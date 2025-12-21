@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo Carrera y Crear Club – Fútbol con Clase</title>
+ <!-- SEO -->
+    <meta name="description" content="Bienvenidos al blog oficial de Fútbol con Clase. Descargas, juegos, análisis futboleros, PES 2024 PPSSPP y mucho más.">
+    <meta name="author" content="Fútbol con Clase">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Fútbol con Clase – Blog Oficial">
+    <meta property="og:description" content="Noticias, descargas, juegos y todo sobre el fútbol y PES 2024 PPSSPP.">
+    <meta property="og:image" content="../img/Logo_Canal.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/Logo_Canal.png">
+
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<header class="d-flex align-items-center justify-content-between p-2">
+    <a href="https://www.youtube.com/@F%C3%BAtbolconClase777?sub_confirmation=1" target="_blank" class="logo-link">
+        <img src="../img/Logo_Canal.png" alt="Logo del canal" class="Logo">
+    </a>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><button><a href="index.html">Inicio</a></button></li>
+            <li><button><a href="Juegos.html">Juegos</a></button></li>
+            <li><button><a href="Donaciones.html">Donaciones</a></button></li>
+            <li><button><a href="vlog.html">Volver</a></button></li>
+        </ul>
+    </nav>
+</header>
+<main class="container mt-5">
+
+    <!-- MODO CARRERA -->
+    <section>
+        <h1 class="text-center">Modo Carrera Aleatorio</h1>
+        <div class="text-center">
+            <button class="btn btn-primary mt-3" onclick="generarModoCarrera()">Generar Modo Carrera</button>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-body">
+                <p><strong>Liga:</strong> <span id="liga"></span></p>
+                <p><strong>Posición:</strong> <span id="posicion"></span></p>
+                <p><strong>Expectativa:</strong> <span id="expectativa"></span></p>
+                <p><strong>Filosofía:</strong> <span id="filosofia"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CREAR CLUB -->
+    <section class="mt-5">
+        <h1 class="text-center">Crear Club Nuevo</h1>
+
+        <div class="text-center">
+            <button class="btn btn-success mt-3" onclick="generarClub()">Generar Club</button>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-body">
+                <p><strong>Nombre del Equipo:</strong> <span id="nombreEquipo"></span></p>
+                <p><strong>Liga:</strong> <span id="ligaClub"></span></p>
+                <p><strong>Expectativa:</strong> <span id="expectativaClub"></span></p>
+                <p><strong>Filosofía:</strong> <span id="filosofiaClub"></span></p>
+                <p><strong>Color 1ª Equipación:</strong> <span id="color1"></span></p>
+                <p><strong>Color 2ª Equipación:</strong> <span id="color2"></span></p>
+                <p><strong>Color Portero:</strong> <span id="colorPortero"></span></p>
+
+                <div class="text-center mt-3">
+                    <button class="btn btn-primary" onclick="generarPlantilla()">Generar Plantilla</button>
+                </div>
+
+                <div class="mt-4">
+                    <h3 class="text-center">Plantilla del Club</h3>
+                    <h5>Porteros:</h5>
+                    <ul id="plantillaPorteros"></ul>
+
+                    <h5>Defensas:</h5>
+                    <ul id="plantillaDefensas"></ul>
+
+                    <h5>Mediocampistas:</h5>
+                    <ul id="plantillaMediocampistas"></ul>
+
+                    <h5>Delanteros:</h5>
+                    <ul id="plantillaDelanteros"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<script src="../js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
