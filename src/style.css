@@ -802,3 +802,41 @@ a:hover {
   margin-bottom: 1rem;
   line-height: 1.6;
 }
+
+/* Banner superior o intermedio */
+.exe-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.exe-banner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+.exe-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.exe-footer img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+}
+
+/* Ajustes finos para móviles */
+@media (max-width: 600px) {
+  .exe-banner img,
+  .exe-footer img {
+    max-width: 95%;
+  }
+}
